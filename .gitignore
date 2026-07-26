@@ -1,5 +1,11 @@
-# Ignore all .log files
+# Compiled class files
+*.class
+
+# Log files
 *.log
+
+# Execution folder
+bin/
 
 # Ignore the log directory and all its contents
 log/

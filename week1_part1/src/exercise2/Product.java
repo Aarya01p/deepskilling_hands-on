@@ -1,0 +1,49 @@
+package exercise2;
+
+public class Product implements Comparable<Product> {
+    private String productId;
+    private String productName;
+    private String category;
+
+    public Product(String productId, String productName, String category) {
+        this.productId = productId;
+        this.productName = productName;
+        this.category = category;
+    }
+
+    // Getters and Setters
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    // Compare by productId for sorting
+    @Override
+    public int compareTo(Product other) {
+        return this.productId.compareTo(other.productId);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Product[ID=%s, Name=%s, Category=%s]", productId, productName, category);
+    }
+}
