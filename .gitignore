@@ -9,3 +9,5 @@ bin/
 
 # Log folder
 log/
+
+*.bak
