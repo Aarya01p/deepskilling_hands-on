@@ -6,3 +6,6 @@
 
 # Execution folder
 bin/
+
+# Log folder
+log/
